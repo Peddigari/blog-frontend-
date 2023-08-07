@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './CardDetails.css';
-import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { useLocation, useNavigate} from 'react-router-dom'
 import { Store } from './dataStore';
 import rythm from "../Assets/rythm.svg"
 import share from "../Assets/share.svg"
@@ -78,7 +78,7 @@ function CardDetails() {
 
                         </div>
                         <div width="600px" height="300px" className="postimage">
-                            <img src={cardData.image}></img>
+                            <img src={cardData.image} alt="not found"></img>
 
                         </div>
                         <div className="postDesc">{cardData.description}</div>
