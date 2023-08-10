@@ -3,11 +3,11 @@
     flex-direction: column;
 }
 
-.dynamicContainer1{
+.dynamicContainer1 {
     width: 90%;
     margin: 0 auto;
     display: flex;
-}
+  }
 .innerdynamicContainer1{
     width: 30%;
     display: flex;
@@ -34,6 +34,7 @@
 .profilediv{
     display: flex;
     justify-content: space-between;
+    margin-right: 50px;
 }
 .avatardiv{
     display: flex;
@@ -51,4 +52,11 @@
 }
 .footercards{
     display: flex;
+    margin-top: 20px;
+    
+}
+.dynamicMoreItems {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
 }

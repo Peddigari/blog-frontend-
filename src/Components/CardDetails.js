@@ -14,8 +14,9 @@ function CardDetails() {
     const [NewsList] = useContext(Store);
     const location = useLocation();
     const cardData = location.state;
+    console.log(cardData)
     // console.log(cardData);
-    const footer = NewsList.slice(1,4 );
+    // const footer = NewsList.slice(1,4 );
     // if(cardData.cat === "Bollywood"){
     //     NewsList.slice(1,4)
     // }
@@ -88,9 +89,10 @@ function CardDetails() {
                 </div>
                 <div className="dynamicContainer2">
                         <div className="footers">
-                            <div className="">more from the siren</div>
+                            <div className="dynamicMoreItems">More From The Siren</div>
                             <div className="footercards">
-                                {footer.length && footer.filter((item) => item.cat === cardData.cat).map((data) => {
+                                {NewsList.length && NewsList.filter((item) => ((item.id%4) === 0 ) && (item.cat === cardData.cat))
+                                .map((data) => {
                                     return (
                                         <div onClick={() => { navi(`/${data.cat}/${data.id}`, { state: data }); }} className="footerContainer">
                                             <div className="cardImage">

@@ -7,28 +7,38 @@ function Home() {
     const [NewsList] = useContext(Store);
     const modifiedList = NewsList.slice(65, 68);
     const rightmodifiedList = NewsList.slice(69, 72);
+    const leftmodifiedList = NewsList.slice(73, 76);
+    const downmodifiedList = NewsList.slice(77,80);
+
 
     return (
         <>
             <div className="homeContainer">
                 <div className="photos">
                     <div className="largeImge">
-                        <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2023/07/box-office-oppenheimer-keeps-rising-on-sunday-as-well-is-a-solid-hit-01.jpg" alt="not found"></img>
+                       <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2023/07/box-office-oppenheimer-keeps-rising-on-sunday-as-well-is-a-solid-hit-01.jpg" alt="not found"></img>
+                        <div className="img-text">Oppenheimer had yet another wonderful day at the box office with 7 crores* more added to its total.</div>
                     </div>
+                    <div>
                     <div className="sideImges">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3PUwf1EO6RArld_lfqg58b85HQ2ASr4IUClXefKHN2xgPuwD" alt="Not found"></img>
+                        <div className="sideimg-text">Hollywood’s Slo-Mo Self-Sabotage</div>
+                        </div>
+                        <div className="sideImges">
                         <img src="https://images.indianexpress.com/2023/07/F2QIexIbYAAlpzd.jpg?w=640" alt="Not found"></img>
+                        <div className="sideimg-text">ISRO successfully places seven Singaporean satellites.</div>
+                    </div>
                     </div>
                 </div>
                 <div className="innerHeading1">The Latest</div>
                 <div className="flexProp">
-                {modifiedList.length && modifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
+                {rightmodifiedList.length && rightmodifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
                     return (
                         <div onClick={()=>{navi(`/${data.cat}/${data.id}`, { state:data});  }} className="cardContainer">
-                            <div className="cardImage">
-                                <img width="100%" height="100%" src={data.image} alt="Not found"></img>
+                            <div className="cardFooterImage">
+                                <img  src={data.image} alt="Not found"></img>
                             </div>
-                            <div className="cardContent">
+                            <div className="cardHomeContent">
                                 <div className="cardHeading" title={data.heading}>{data.heading}</div>
                                 <div className="cardDesc">{data.description}</div>
                                 <div className="cardFooter">Travel /<span>August 21 2017</span></div>
@@ -49,7 +59,7 @@ function Home() {
                                     </div>
                                     <div className="cardContent">
                                         <div className="cardHeading" title={data.heading}>{data.heading}</div>
-                                        <div className="cardDesc">{data.description}</div>
+                                        <div className="cardDesc" style={{marginBottom:"10px"}}>{data.description}</div>
                                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                     </div>
                                 </div>
@@ -81,7 +91,7 @@ function Home() {
                             <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                         </div>
                         <div className="childContainer2">
-                            {rightmodifiedList.length && rightmodifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
+                            {leftmodifiedList.length && leftmodifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
                                 return (
                                     <div onClick={()=>{navi(`/${data.cat}/${data.id}`, { state:data});  }} style={{ margin: "20px 0px" }} className="cardContainer">
                                         <div className="cardImage reduceImge">
@@ -103,7 +113,7 @@ function Home() {
                 <div>
                     <div className="innerHeading1">Latest Stories</div>
                     <div className="flexProp">
-                        {modifiedList.length && modifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
+                        {downmodifiedList.length && downmodifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
                             return (
                                 <div className="cardContainer">
                                     <div className="cardContent">
