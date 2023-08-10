@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Store } from "./dataStore";
 import './common.css';
-import { Navigate, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 
 

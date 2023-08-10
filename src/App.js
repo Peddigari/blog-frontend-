@@ -1,8 +1,8 @@
 // import '../style.css'
-import  React , {useEffect} from 'react';
+import  React  from 'react';
 import './App.css';
-import TopHeader from './Components/TopHeader';
-import { BrowserRouter, Route, Routes, useLocation , useNavigate} from 'react-router-dom'
+// import TopHeader from './Components/TopHeader';
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Bollywood from './Components/Bollywood'
 import Home from './Components/Home'
 import LinksComp from './Components/LinksComp'

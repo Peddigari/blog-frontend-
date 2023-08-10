@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Hamburger from "../Assets/bars-solid.svg" 
 const TopHeader = (props) => {
     
