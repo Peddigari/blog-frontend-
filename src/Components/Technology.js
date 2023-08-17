@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 function Technology() {
     const navi = useNavigate();
     const [NewsList] = useContext(Store);
-    const modifiedList = NewsList.slice(52, 60);
-    const rightmodifiedList = NewsList.slice(61, 64);
+    const modifiedList = NewsList.slice(48, 56);
+    const rightmodifiedList = NewsList.slice(57, 60);
     // console.log(NewsList);
     return (
         <>
@@ -24,7 +24,7 @@ function Technology() {
                                 </div>
                                 <div className="cardContent">
                                     <div className="cardHeading" title={data.heading}>{data.heading}</div>
-                                    <div className="cardDesc">{data.description}</div>
+                                    <div className="cardDesc" title={data.description} >{data.description}</div>
                                     <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                 </div>
                             </div>
@@ -35,11 +35,11 @@ function Technology() {
                 </div>
                 <div className="innerContainer2">
                     <div className="innerHeading1">Top Posts</div>
-                    <div onClick={()=>{navi(`/${NewsList[60].cat}/${NewsList[60].id}`, { state:NewsList[60]});  }} className="childContainer1">
+                    <div onClick={()=>{navi(`/${NewsList[56].cat}/${NewsList[56].id}`, { state:NewsList[56]});  }} className="childContainer1">
                         <div className="topImage">
-                            <img src={NewsList[60].image} alt="Not found"></img>
+                            <img src={NewsList[56].image} alt="Not found"></img>
                         </div>
-                        <div className="cardHeading">{NewsList[60].heading}</div>
+                        <div className="cardHeading">{NewsList[56].heading}</div>
                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                         </div>
                     <div className="childContainer2">

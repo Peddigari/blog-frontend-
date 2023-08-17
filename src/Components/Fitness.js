@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 
 function Fitness() {
     const [NewsList] = useContext(Store);
-    const modifiedList = NewsList.slice(40, 48);
-    const rightmodifiedList = NewsList.slice(49, 52);
+    const modifiedList = NewsList.slice(36,44);
+    const rightmodifiedList = NewsList.slice(45, 48);
     const navi = useNavigate()
     // console.log(NewsList);
     return (
@@ -35,11 +35,11 @@ function Fitness() {
                 </div>
                 <div className="innerContainer2">
                     <div className="innerHeading1">Top Posts</div>
-                    <div  onClick={()=>{navi(`/${NewsList[48].cat}/${NewsList[48].id}`, { state:NewsList[48]});  }} className="childContainer1">
+                    <div  onClick={()=>{navi(`/${NewsList[44].cat}/${NewsList[44].id}`, { state:NewsList[44]});  }} className="childContainer1">
                         <div className="topImage">
-                            <img src={NewsList[48].image} alt="Not found"></img>
+                            <img src={NewsList[44].image} alt="Not found"></img>
                         </div>
-                        <div className="cardHeading">{NewsList[48].heading}</div>
+                        <div className="cardHeading">{NewsList[44].heading}</div>
                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                         </div>
                     <div className="childContainer2">

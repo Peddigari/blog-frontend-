@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Hamburger from "../Assets/bars-solid.svg" 
+// import Home from './Home';
 const TopHeader = (props) => {
+    const navigate = useNavigate();
+
     
     const ClickHandle=()=>{
         props.setShowNav(!props.showNav)
@@ -8,7 +12,7 @@ const TopHeader = (props) => {
 
     return (
         <div className="topText">
-            <div className="title">
+            <div className="title" onClick={()=>{navigate("/")} }>
             <div className="the">The</div>
             <div className='siren'>Siren</div>
             </div>

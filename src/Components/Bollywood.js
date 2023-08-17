@@ -7,7 +7,7 @@ import {useNavigate } from "react-router-dom";
 
 function Bollywood() {
     const [NewsList] = useContext(Store);
-    const modifiedList = NewsList.slice(0, 8);
+    const modifiedList = NewsList.slice(0,8);
     const rightmodifiedList = NewsList.slice(9, 12);
     const navi = useNavigate()
    
@@ -25,7 +25,7 @@ function Bollywood() {
                                 </div>
                                 <div className="cardContent">
                                     <div className="cardHeading" title={data.heading}>{data.heading}</div>
-                                    <div className="cardDesc">{data.description}</div>
+                                    <div className="cardDesc" title={data.description}>{data.description}</div>
                                     <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@ function Bollywood() {
                         <div className="topImage">
                             <img src={NewsList[8].image} alt="Not found"></img>
                         </div>
-                        <div className="cardHeading">{NewsList[8].heading}</div>
+                        <div className="cardHeading" title={NewsList[8].heading}>{NewsList[8].heading}</div>
                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                         </div>
                     <div  className="childContainer2">
@@ -51,7 +51,7 @@ function Bollywood() {
                                         <img className="Imge" src={data.image} alt="Not found"></img>
                                     </div>
                                     <div className="cardContent">
-                                        <div className="cardHeading">{data.heading}</div>
+                                        <div className="cardHeading" title={data.heading}>{data.heading}</div>
                                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                     </div>
                                 </div>

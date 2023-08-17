@@ -5,7 +5,7 @@
   justify-content: space-between;
   margin-top: 30px;
   overflow-x: hidden;
-  gap: 30px;
+  gap: 15px;
 }
 .innerContainer1{
   /* width: 50%; */
@@ -52,6 +52,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
   
 }
 .cardImage{
@@ -141,7 +142,7 @@
     /* box-sizing: border-box; */
   }
   .cardImage img{
-    width: 175px;
+    width: 175px !important;
     /* height: 100px; */
   }
   .innerContainer1{

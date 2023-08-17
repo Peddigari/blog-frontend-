@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
     const navi =useNavigate();
     const [NewsList] = useContext(Store);
-    const modifiedList = NewsList.slice(65, 68);
-    const rightmodifiedList = NewsList.slice(69, 72);
-    const leftmodifiedList = NewsList.slice(73, 76);
-    const downmodifiedList = NewsList.slice(77,80);
+    const modifiedList = NewsList.slice(60, 63);
+    const rightmodifiedList = NewsList.slice(63, 67);
+    const leftmodifiedList = NewsList.slice(67, 70);
+    const downmodifiedList = NewsList.slice(71,74);
 
 
     return (
@@ -19,27 +19,27 @@ function Home() {
                        <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2023/07/box-office-oppenheimer-keeps-rising-on-sunday-as-well-is-a-solid-hit-01.jpg" alt="not found"></img>
                         <div className="img-text">Oppenheimer had yet another wonderful day at the box office with 7 crores* more added to its total.</div>
                     </div>
-                    <div>
+                    <div className="sideimgContainer">
                     <div className="sideImges">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3PUwf1EO6RArld_lfqg58b85HQ2ASr4IUClXefKHN2xgPuwD" alt="Not found"></img>
-                        <div className="sideimg-text">Hollywood’s Slo-Mo Self-Sabotage</div>
+                        <img src="https://images.indianexpress.com/2023/07/x-twitter-office.jpg?w=640" alt="Not found"></img>
+                        <div className="sideimg-text">Musk draws heat from San Francisco over giant X logo.</div>
                         </div>
                         <div className="sideImges">
-                        <img src="https://images.indianexpress.com/2023/07/F2QIexIbYAAlpzd.jpg?w=640" alt="Not found"></img>
-                        <div className="sideimg-text">ISRO successfully places seven Singaporean satellites.</div>
+                        <img src="https://images.indianexpress.com/2023/07/NASA-DRACO-202307276.jpg?w=640" alt="Not found"></img>
+                        <div className="sideimg-text">NASA, DARPA select Lockheed Martin to develop nuclear rocket engine.</div>
                     </div>
                     </div>
                 </div>
-                <div className="innerHeading1">The Latest</div>
-                <div className="flexProp">
+                <div className="innerHeading1 mt-100" style={{width:"90%", margin:"0 auto"}}>The Latest</div>
+                <div className="flexProp" style={{width:"90%", margin:"0 auto"}}>
                 {rightmodifiedList.length && rightmodifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
                     return (
-                        <div onClick={()=>{navi(`/${data.cat}/${data.id}`, { state:data});  }} className="cardContainer">
+                        <div onClick={()=>{navi(`/${data.cat}/${data.id}`, { state:data});  }} style={{flexDirection:'column'}} className="cardContainer">
                             <div className="cardFooterImage">
                                 <img  src={data.image} alt="Not found"></img>
                             </div>
                             <div className="cardHomeContent">
-                                <div className="cardHeading" title={data.heading}>{data.heading}</div>
+                                <div className="cardHeading" title={data.heading}style={{display:"flex"}}>{data.heading}</div>
                                 <div className="cardDesc">{data.description}</div>
                                 <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                             </div>
@@ -65,8 +65,8 @@ function Home() {
                                 </div>
                             )
                         })}
-                        <div className="largeImge" >
-                            <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2023/07/box-office-oppenheimer-keeps-rising-on-sunday-as-well-is-a-solid-hit-01.jpg" alt="not found"></img>
+                        <div  className="largeImge" >
+                            <img style={{height:"650px"}} src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2023/07/box-office-oppenheimer-keeps-rising-on-sunday-as-well-is-a-solid-hit-01.jpg" alt="not found"></img>
                         </div>
 
 
@@ -98,7 +98,7 @@ function Home() {
                                             <img className="Imge" src={data.image} alt="Not found"></img>
                                         </div>
                                         <div className="cardContent">
-                                            <div className="cardHeading">{data.heading}</div>
+                                            <div className="cardHeading" title={data.heading}>{data.heading}</div>
                                             <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                         </div>
                                     </div>
@@ -111,12 +111,12 @@ function Home() {
                 </div>
 
                 <div>
-                    <div className="innerHeading1">Latest Stories</div>
-                    <div className="flexProp">
+                    <div style={{width:"90%", margin:"0 auto"}} className="innerHeading1">Latest Stories</div>
+                    <div style={{width:"90%", margin:"0 auto"}} className="flexProp">
                         {downmodifiedList.length && downmodifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
                             return (
                                 <div className="cardContainer">
-                                    <div className="cardContent">
+                                    <div style={{maxWidth:"350px"}} className="cardContent">
                                         <div className="cardHeading" title={data.heading}>{data.heading}</div>
                                         <div className="cardDesc">{data.description}</div>
                                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>

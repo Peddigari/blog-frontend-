@@ -91,15 +91,17 @@ function CardDetails() {
                         <div className="footers">
                             <div className="dynamicMoreItems">More From The Siren</div>
                             <div className="footercards">
-                                {NewsList.length && NewsList.filter((item) => ((item.id%4) === 0 ) && (item.cat === cardData.cat))
+                                {NewsList.length && NewsList.filter((item) => ( (item.cat === cardData.cat) &&  (item.id%4) === 0 ) 
+                                
+                                )
                                 .map((data) => {
                                     return (
                                         <div onClick={() => { navi(`/${data.cat}/${data.id}`, { state: data }); }} className="footerContainer">
-                                            <div className="cardImage">
-                                                <img width="100%" height="100%" src={data.image} alt="Not found"></img>
+                                            <div className="cardImage wt-90">
+                                                <img classname="" width="100%" height="100%" src={data.image} alt="Not found"></img>
                                             </div>
-                                            <div className="cardContent">
-                                                <div className="cardHeading" title={data.heading}>{data.heading}</div>
+                                            <div className="cardContent mw-100">
+                                                <div style={{maxWidth:"300px"}} className="cardHeading  wt-90" title={data.heading}>{data.heading}</div>
                                                 {/* <div className="cardDesc">{data.description}</div> */}
                                                 {/* <div className="cardFooter">Travel /<span>August 21 2017</span></div> */}
                                             </div>

@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 function Hollywood() {
     const navi = useNavigate();
     const [NewsList] = useContext(Store);
-    const modifiedList = NewsList.slice(13, 20);
+    const modifiedList = NewsList.slice(12, 20);
     const rightmodifiedList = NewsList.slice(21, 24);
     // console.log(NewsList);
     return (
@@ -35,11 +35,11 @@ function Hollywood() {
                 </div>
                 <div className="innerContainer2">
                     <div className="innerHeading1">Top Posts</div>
-                    <div onClick={()=>{navi(`/${NewsList[13].cat}/${NewsList[13].id}`, { state:NewsList[13]});  }} className="childContainer1">
+                    <div onClick={()=>{navi(`/${NewsList[20].cat}/${NewsList[20].id}`, { state:NewsList[20]});  }} className="childContainer1">
                         <div className="topImage">
-                            <img src={NewsList[13].image} alt="Not found"></img>
+                            <img src={NewsList[20].image} alt="Not found"></img>
                         </div>
-                        <div className="cardHeading">{NewsList[13].heading}</div>
+                        <div className="cardHeading">{NewsList[20].heading}</div>
                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                         </div>
                     <div className="childContainer2">

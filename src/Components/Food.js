@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 
 function Food() {
     const [NewsList] = useContext(Store);
-    const modifiedList = NewsList.slice(25, 33);
-    const rightmodifiedList = NewsList.slice(34, 39);
+    const modifiedList = NewsList.slice(24, 32);
+    const rightmodifiedList = NewsList.slice(33, 36);
     const navi = useNavigate()
     // console.log(NewsList);
     return (
@@ -35,11 +35,11 @@ function Food() {
                 </div>
                 <div className="innerContainer2">
                     <div className="innerHeading1">Top Posts</div>
-                    <div onClick={()=>{navi(`/${NewsList[33].cat}/${NewsList[33].id}`, { state:NewsList[33]});  }} className="childContainer1">
+                    <div onClick={()=>{navi(`/${NewsList[32].cat}/${NewsList[32].id}`, { state:NewsList[32]});  }} className="childContainer1">
                         <div className="topImage">
-                            <img src={NewsList[33].image} alt="Not found"></img>
+                            <img src={NewsList[32].image} alt="Not found"></img>
                         </div>
-                        <div className="cardHeading">{NewsList[33].heading}</div>
+                        <div className="cardHeading">{NewsList[32].heading}</div>
                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                         </div>
                     <div  className="childContainer2">

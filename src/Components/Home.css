@@ -3,18 +3,23 @@
 .photos{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     margin-top: 20px;
 
 }
 .sideImges{
     width: 400px !important;
-    height: 300px !important;
+    height: 298px !important;
     position: relative;
   }
   .sideImges img{
     width: 400px;
     height: 100%;
+  }
+  .sideimgContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
   .largeImge{
     width: 800px !important;
@@ -22,7 +27,7 @@
     position: relative;
   }
   .img-text{
-    font-size: 24px;
+    font-size: 18px;
     position: absolute;
     bottom: 60px;
     left: 10px;
@@ -33,11 +38,13 @@
       height: 600px;
   }
   .sideimg-text{
+    max-width: 330px;
     position: absolute;
     /* top:50%; */
     /* right: -83px; */
     bottom: 20px;
-    left: 10px;
+    left: 5px;
+    color: #ccc;
 
   }
   /* .sideimg2-text{
@@ -59,7 +66,7 @@
       justify-content: space-between;
   }
   .cardHomeContent{
-    /* max-width: 180px; */
+    max-width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,7 +85,7 @@
      height: 100%;
   
     }
-   
+    
 
 
   @media screen and (min-width:370px) and  (max-width:600px) {
@@ -103,7 +110,8 @@
       height: 400px;
     }
     .cardHomeContent{
-      max-width: 180px;
+      max-width: 100%;
+      width: 100% !important;
       display: flex;
       gap: 10px;
     }
@@ -126,7 +134,11 @@
   flex-direction: column;
 }
 .cardFooterImage img {
-  width:175px;
+  width:100%;
 
 }
+.mt-100{
+  margin-top: -100px !important;
+}
+
   }
