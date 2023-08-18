@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Store } from "./dataStore";
 import './common.css';
 import { useNavigate } from "react-router-dom";
+import Bottom from "./Bottom";
 
 
 
@@ -24,7 +25,7 @@ function Food() {
                                 </div>
                                 <div className="cardContent">
                                     <div className="cardHeading" title={data.heading}>{data.heading}</div>
-                                    <div className="cardDesc">{data.description}</div>
+                                    <div className="cardDesc" title={data.description}>{data.description}</div>
                                     <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                 </div>
                             </div>
@@ -70,6 +71,7 @@ function Food() {
 
                 </div>
             </div>
+                <Bottom/>
 
 
         </>

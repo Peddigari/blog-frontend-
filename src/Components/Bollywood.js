@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Store } from "./dataStore";
 import './common.css';
 import {useNavigate } from "react-router-dom";
+import Bottom from "./Bottom";
 
 
 
@@ -71,6 +72,7 @@ function Bollywood() {
 
                 </div>
             </div>
+                <Bottom/>
 
 
         </>

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Store } from "./dataStore";
 import './common.css';
 import { useNavigate } from "react-router-dom";
+import Bottom from "./Bottom";
 
 
 
@@ -24,7 +25,7 @@ function Fitness() {
                                 </div>
                                 <div className="cardContent">
                                     <div className="cardHeading" title={data.heading}>{data.heading}</div>
-                                    <div className="cardDesc">{data.description}</div>
+                                    <div className="cardDesc" title={data.description}>{data.description}</div>
                                     <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                 </div>
                             </div>
@@ -39,7 +40,7 @@ function Fitness() {
                         <div className="topImage">
                             <img src={NewsList[44].image} alt="Not found"></img>
                         </div>
-                        <div className="cardHeading">{NewsList[44].heading}</div>
+                        <div className="cardHeading" title={NewsList.heading}>{NewsList[44].heading}</div>
                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                         </div>
                     <div className="childContainer2">
@@ -50,7 +51,7 @@ function Fitness() {
                                         <img className="Imge" src={data.image} alt="Not found"></img>
                                     </div>
                                     <div className="cardContent">
-                                        <div className="cardHeading">{data.heading}</div>
+                                        <div className="cardHeading" title={data.heading}>{data.heading}</div>
                                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                     </div>
                                 </div>
@@ -70,6 +71,7 @@ function Fitness() {
 
                 </div>
             </div>
+                <Bottom/>
 
 
         </>

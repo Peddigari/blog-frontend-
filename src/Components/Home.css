@@ -1,5 +1,7 @@
 
-
+.homeContainer{
+  margin-bottom: 30px;
+}
 .photos{
     display: flex;
     justify-content: center;
@@ -88,8 +90,9 @@
     
 
 
-  @media screen and (min-width:370px) and  (max-width:600px) {
+  @media screen and (min-width:370px) and  (max-width:900px) {
     .img-text {
+      width: 305px;
       font-size: 17px;
       position: absolute;
       top: 318px;
@@ -106,8 +109,9 @@
       margin-left: 20px;
     }
     .largeImge img {
-      width: 400px;
+      width: 350px;
       height: 400px;
+      margin-left: 13px;
     }
     .cardHomeContent{
       max-width: 100%;

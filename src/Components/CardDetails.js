@@ -9,6 +9,7 @@ import facebook from "../Assets/square-facebook.svg"
 import insta from "../Assets/instagram.svg"
 import youtube from "../Assets/youtube.svg"
 import twitter from "../Assets/twitter.svg"
+import Bottom from './Bottom';
 function CardDetails() {
     const navi = useNavigate();
     const [NewsList] = useContext(Store);
@@ -111,6 +112,7 @@ function CardDetails() {
                             </div>
                         </div>
                     </div>
+                    <Bottom/>
             </div>
 
         </>

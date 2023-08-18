@@ -2,11 +2,12 @@ import React, { useContext } from 'react'
 import './Home.css'
 import { Store } from './dataStore';
 import { useNavigate } from 'react-router-dom';
+import Bottom from './Bottom';
 function Home() {
     const navi =useNavigate();
     const [NewsList] = useContext(Store);
     const modifiedList = NewsList.slice(60, 63);
-    const rightmodifiedList = NewsList.slice(63, 67);
+    const rightmodifiedList = NewsList.slice(63, 66);
     const leftmodifiedList = NewsList.slice(67, 70);
     const downmodifiedList = NewsList.slice(71,74);
 
@@ -128,7 +129,7 @@ function Home() {
                 </div>
 
             </div>
-
+                    <Bottom/>
 
         </>
     )
