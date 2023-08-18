@@ -122,3 +122,49 @@
         width: 320px;
       }
 }
+
+@media screen and (min-width:700px) and (max-width:800px){
+    .dynamicContainer1{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+    .footercards{
+    
+            max-width: 100%;
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          
+    }
+
+    .innerdynamicContainer2{
+        width: 100%;
+    }
+    .innerdynamicContainer1{
+        width: 100%;
+    }
+    .wt-90{
+        width: 90%;
+    }
+    .wt-90 img{
+        width: 90% !important;
+    }
+    .mw-100{
+        max-width: 100%;
+    }
+    .footers{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .postimage{
+        width: 320px !important;
+      }
+      .postimage img{
+        width: 320px;
+      }
+}

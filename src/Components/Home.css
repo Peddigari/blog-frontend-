@@ -90,7 +90,7 @@
     
 
 
-  @media screen and (min-width:370px) and  (max-width:900px) {
+  @media screen and (min-width:370px) and  (max-width:600px) {
     .img-text {
       width: 305px;
       font-size: 17px;
@@ -103,6 +103,71 @@
       display: none;
     }
     .flexProp{
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      margin-left: 20px;
+    }
+    .largeImge img {
+      width: 350px;
+      height: 400px;
+      margin-left: 13px;
+    }
+    .cardHomeContent{
+      max-width: 100%;
+      width: 100% !important;
+      display: flex;
+      gap: 10px;
+    }
+    .profilediv {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      gap:10px;
+  }
+ 
+.postimage img{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  /* margin-left: 97px; */
+}
+.footercards {
+  display: flex;
+  flex-direction: column;
+}
+.cardFooterImage img {
+  width:100%;
+
+}
+.mt-100{
+  margin-top: -100px !important;
+}
+
+  }
+
+
+  @media screen and (min-width:600px) and  (max-width:800px) {
+    .photos{
+      width: 50%;
+      margin:0 auto;
+  
+  }
+    .img-text {
+      width: 305px;
+      font-size: 17px;
+      position: absolute;
+      top: 318px;
+      left: 26px;
+      color: #ccc;
+  }
+    .sideImges{
+      display: none;
+    }
+    .flexProp{
+      width: 90%;
+      margin: 0px auto;
       display: flex;
       flex-direction: column;
       /* align-items: center; */

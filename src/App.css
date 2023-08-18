@@ -103,3 +103,23 @@ transition: 1s;
 }
   
 }
+
+
+
+@media screen and (min-width:600px) and  (max-width:800px) {
+  .hamburger{
+    width: 24px;
+    height:24px;
+    display: block;
+    justify-content: space-evenly;
+
+  }
+  .topText {
+    width: 90%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+}

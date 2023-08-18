@@ -171,3 +171,46 @@
   }
   
 }
+
+@media screen and (min-width:600px) and  (max-width:800px) {
+  .NavLinks{
+    display: none;
+  }
+  .mainContainer{
+    width: 100%;
+    /* margin: 0px 10px; */
+    display: flex;
+    flex-direction: column;
+    /* box-sizing: border-box; */
+  }
+  .cardImage img{
+    width: 175px !important;
+    /* height: 100px; */
+  }
+  .innerContainer1{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .innerContainer2{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .cardContainer{
+    /* margin:  10px; */
+  }
+  .cardContent{
+    max-width: 180px;
+    display: flex;
+    gap:10px;
+    /* min-width: 200px; */
+  }
+
+  .topImage{
+    max-width: 340px;
+  }
+
+  .childContainer3{
+    min-height: fit-content;
+  }
+  
+}
