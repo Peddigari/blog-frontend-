@@ -67,6 +67,12 @@ function Food() {
                         <div className="childContainer3">
                             <img width="100%" src="https://media.tenor.com/474I0SevAcQAAAAM/trevor-noah-breaking-news.gif" alt="not found"></img>
                         </div>
+                        <div className="childContainer3">
+                                <img width="100%" height="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Uv_aqKspYKwFfxZVbTTm0ifSCz6nTodond7G6NYiGw&s" alt="not found"></img>
+                            </div>
+                            <div className="childContainer3">
+                                <img width="100%" height="100%" src="https://media.tenor.com/95ImeNjSVCcAAAAM/breaking-news-breaking-lies.gif" alt="not found"></img>
+                            </div>
                     </div>
 
                 </div>

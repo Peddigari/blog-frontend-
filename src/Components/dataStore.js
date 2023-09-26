@@ -7,7 +7,7 @@ export const Store =createContext();
 function DataStore(props){
     const [data,setData]=useState("")
     useEffect(()=>{
-        // let base_url="http://localhost:8000"
+        // let base_url="http://localhost:3000"
         let base_url="https://node-blog-app-5dec.onrender.com"
         fetch(base_url)
         .then(res=>res.json())
