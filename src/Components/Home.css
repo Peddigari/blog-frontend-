@@ -216,13 +216,14 @@
     .photos{
       width: 50%;
       margin:0 auto;
+      margin-bottom: 50px;
   
   }
     .img-text {
       width: 305px;
       font-size: 17px;
       position: absolute;
-      top: 318px;
+      top: 510px;
       left: 26px;
       color: #ccc;
   }
@@ -239,7 +240,7 @@
     }
     .largeImge img {
       width: 350px;
-      height: 400px;
+      /* height: 400px; */
       margin-left: 13px;
     }
     .cardHomeContent{
