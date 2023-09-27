@@ -208,9 +208,26 @@
   .topImage{
     max-width: 340px;
   }
-
+.advertisements{
+  display: flex;
+  justify-content: space-around;
+}
   .childContainer3{
     min-height: fit-content;
+    height: 300px;
+  }
+  .childContainer3 img{
+    min-height: fit-content;
+    height: 300px;
   }
   
+}
+
+@media screen and (min-width:800px) and  (max-width:992px) {
+.Imge{
+  width: 300px !important;
+}
+.childContainer3 img{
+  height: 350px;
+}
 }
