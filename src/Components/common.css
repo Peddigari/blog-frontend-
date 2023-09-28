@@ -221,6 +221,7 @@
     height: 300px;
   }
   
+  
 }
 
 @media screen and (min-width:800px) and  (max-width:992px) {
@@ -229,5 +230,8 @@
 }
 .childContainer3 img{
   height: 500px;
+}
+.ht-300 img{
+  height: 300px;
 }
 }

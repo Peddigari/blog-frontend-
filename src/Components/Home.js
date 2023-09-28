@@ -74,10 +74,10 @@ function Home() {
                     </div>
                     <div className="innerContainer2">
                         <div className="advertisements">
-                            <div className="childContainer3">
+                            <div className="childContainer3 ht-300">
                                 <img width="100%" height="100%" src="https://media.tenor.com/YNp5t_lLA2oAAAAM/breaking-news-news.gif" alt="not found"></img>
                             </div>
-                            <div className="childContainer3">
+                            <div className="childContainer3 ht-300">
                                 <img width="100%" height="100%" src="https://media.tenor.com/474I0SevAcQAAAAM/trevor-noah-breaking-news.gif" alt="not found"></img>
                             </div>
                             {/* <div className="childContainer3">
