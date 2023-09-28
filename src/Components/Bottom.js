@@ -22,15 +22,17 @@ function Bottom() {
                 </div>
                 <div className="secCont">
                 <div>
-                <ul>
                 <h2>Services</h2>
+                <ul>
                         <li>Home</li>
                         <li>Bollywood</li>
                         <li>Technology</li>
-                        <li>Hollywood</li>
+                    
+                    
+                    <li>Hollywood</li>
                         <li>Fitness</li>
                         <li>Food</li>
-                    </ul>
+                        </ul>
                 </div>
                    
                 </div>

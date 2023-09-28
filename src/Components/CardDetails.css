@@ -61,8 +61,8 @@
     gap: px;
 }
 .footercards{
-    width: 80%;
-    overflow-x: auto;
+    width: 100%;
+    /* overflow-x: auto; */
     margin: 0 auto;
     margin-top: 20px;
     display: flex;

@@ -65,7 +65,7 @@
   .flexProp{
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
   }
   .cardHomeContent{
     max-width: 250px;
@@ -148,7 +148,7 @@
   }
 
 
-  @media screen and (min-width:600px) and  (max-width:768px) {
+  @media screen and (min-width:600px) and  (max-width:700px) {
     .photos{
       width: 50%;
       margin:0 auto;

@@ -6,6 +6,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: -30px;
 }
 #title{
     display: flex;
@@ -57,7 +58,7 @@ ul li{
         flex-direction: column;
     }    
 }
-@media screen and (min-width:600px) and  (max-width:800px) {
+@media screen and (min-width:600px) and  (max-width:700px) {
     .MainCont{
         /* width: 50%; */
         display: flex;

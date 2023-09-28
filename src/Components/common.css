@@ -91,7 +91,7 @@
 /* //innerContainer2 */
 .childContainer1{
   margin-top:30px ;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   border-bottom: 1px solid #ccc;
   display: flex;
   flex-direction: column;
@@ -172,7 +172,7 @@
   
 }
 
-@media screen and (min-width:600px) and  (max-width:800px) {
+@media screen and (min-width:600px) and  (max-width:700px) {
   .NavLinks{
     display: none;
   }
@@ -224,7 +224,7 @@
   
 }
 
-@media screen and (min-width:800px) and  (max-width:992px) {
+@media screen and (min-width:700px) and  (max-width:992px) {
 .Imge{
   width: 300px !important;
 }
