@@ -36,7 +36,7 @@ function Home() {
                 {rightmodifiedList.length && rightmodifiedList.filter((item) => item.cat === "HomeLatest").map((data) => {
                     return (
                         <div onClick={()=>{navi(`/${data.cat}/${data.id}`, { state:data});  }} style={{flexDirection:'column'}} className="cardContainer">
-                            <div className="cardFooterImage">
+                            <div className="cardFooterImage wtinc">
                                 <img  src={data.image} alt="Not found"></img>
                             </div>
                             <div className="cardHomeContent">
