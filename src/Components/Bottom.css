@@ -6,7 +6,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin-bottom: -30px;
 }
 #title{
     display: flex;
