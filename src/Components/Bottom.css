@@ -23,11 +23,11 @@
     background-color: cornflowerblue
 }
 .firstCont{
-    margin: 15px 20px;
+    margin: 5px 20px;
     display: flex;
     /* display: block; */
     flex-direction: column;
-    gap: 15px;
+    gap: 4px;
 }
 .sirenpara{
     /* display: inline-block; */
