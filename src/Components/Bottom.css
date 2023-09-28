@@ -3,10 +3,10 @@
     border-radius: 5px;
     /* width: 90%; */
     /* margin: 0 auto; */
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    margin-bottom: -30px;
+    margin-bottom: 30px;
 }
 #title{
     display: flex;
@@ -23,11 +23,11 @@
     background-color: cornflowerblue
 }
 .firstCont{
-    margin: 5px 20px;
+    margin: 10px 20px;
     display: flex;
     /* display: block; */
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
 }
 .sirenpara{
     /* display: inline-block; */

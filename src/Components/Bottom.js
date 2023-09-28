@@ -38,7 +38,7 @@ function Bottom() {
 
                 </div>
                 <div className="thirdCont">
-                    <div> <ul>
+                    <div> <ul style={{marginRight:"12px"}}>
                         <h2>Resources</h2>
                         <li>Blog</li>
                         <li>Help Center</li>
