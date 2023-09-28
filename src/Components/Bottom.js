@@ -10,45 +10,46 @@ function Bottom() {
         <>
             <div className="MainCont">
                 <div className="firstCont">
-                   <div id="title">
-                   <div id="the">The</div>
-                    <div id="siren">Siren</div>
-                   </div>
+                    <div id="title">
+                        <div id="the">The</div>
+                        <div id="siren">Siren</div>
+                    </div>
                     <div className="sirenpara">The Siren is India's leading platform where you can find all the information about different categories like technology, fitness, food, bollywood, hollywood in an easy way</div>
                     <div> <img width="25px" height="25px" src={facebook} alt="not found"></img>
-                                <img width="25px" height="25px" src={insta} alt="not found"></img>
-                                <img width="25px" height="25px" src={twitter} alt="not found"></img>
-                                <img width="25px" height="25px" src={youtube} alt="not found"></img></div>
+                        <img width="25px" height="25px" src={insta} alt="not found"></img>
+                        <img width="25px" height="25px" src={twitter} alt="not found"></img>
+                        <img width="25px" height="25px" src={youtube} alt="not found"></img></div>
                 </div>
                 <div className="secCont">
-                <div>
-                <h2>Services</h2>
-                <ul>
-                        <li>Home</li>
-                        <li>Bollywood</li>
-                        <li>Technology</li>
-                    
-                    
-                    <li>Hollywood</li>
-                        <li>Fitness</li>
-                        <li>Food</li>
+                    <div style={{ display: "flex" }} >
+                        <ul >
+                            <h2>Services</h2>
+                            <li>Home</li>
+                            <li>Bollywood</li>
+                            <li>Technology</li>
+
                         </ul>
-                </div>
-                   
+                        <ul style={{marginTop:"88px"}}>
+                            <li>Hollywood</li>
+                            <li>Fitness</li>
+                            <li>Food</li>
+                        </ul>
+                    </div>
+
                 </div>
                 <div className="thirdCont">
                     <div> <ul>
-                    <h2>Resources</h2>
+                        <h2>Resources</h2>
                         <li>Blog</li>
                         <li>Help Center</li>
                         <li>Careers</li>
                         <li>Contact Us</li>
                     </ul></div>
-                   
+
                 </div>
-           
+
             </div>
-            
+
         </>
     )
 }
