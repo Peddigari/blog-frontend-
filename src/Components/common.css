@@ -234,4 +234,32 @@
 .ht-300 img{
   height: 300px;
 }
+.cardHeading{
+  width: 320px;
+  line-height: 26px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+.wdt-300{
+  width: 310px;
+}
+}
+@media screen and (min-width:700px) and  (max-width:1024px){
+  .cardHeading{
+    width: 320px;
+    line-height: 26px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+    font-weight: 600;
+  
+  }
+
 }
