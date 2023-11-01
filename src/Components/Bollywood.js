@@ -25,7 +25,7 @@ function Bollywood() {
                                     <img width="100%" height="100%" src={data.image} alt="Not found"></img>
                                 </div>
                                 <div className="cardContent">
-                                    <div className="cardHeading wdt-300" title={data.heading}>{data.heading}</div>
+                                    <div className="cardHeading" title={data.heading}>{data.heading}</div>
                                     <div className="cardDesc" title={data.description}>{data.description}</div>
                                     <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                 </div>
@@ -41,7 +41,7 @@ function Bollywood() {
                         <div className="topImage">
                             <img src={NewsList[8].image} alt="Not found"></img>
                         </div>
-                        <div className="cardHeading wdt-300 " title={NewsList[8].heading}>{NewsList[8].heading}</div>
+                        <div className="cardHeading " title={NewsList[8].heading}>{NewsList[8].heading}</div>
                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                         </div>
                     <div  className="childContainer2">
@@ -52,7 +52,7 @@ function Bollywood() {
                                         <img className="Imge" src={data.image} alt="Not found"></img>
                                     </div>
                                     <div className="cardContent">
-                                        <div className="cardHeading wdt-300" title={data.heading}>{data.heading}</div>
+                                        <div className="cardHeading" title={data.heading}>{data.heading}</div>
                                         <div className="cardFooter">Travel /<span>August 21 2017</span></div>
                                     </div>
                                 </div>
